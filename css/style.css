@@ -1,0 +1,30 @@
+body {
+  background-image: linear-gradient(to left bottom, #b3e0e3, #d79ce0);
+  /* background-image: url(../images/bg-3.jpg);
+  background-size: cover; */
+  color: darkslategrey;
+}
+.pricing h6 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.list-item {
+  padding: 3px;
+}
+.list-item:not(:last-child) {
+  margin-bottom: 5px;
+  border-bottom: 1px solid lightslategray;
+}
+.big-border {
+  border-bottom: 2px solid darkslategrey !important;
+}
+.btn {
+  color: #000;
+  border: 1px solid darkslategray;
+}
+.btn-hover:hover {
+  background-color: darkslategrey;
+  color: #fff;
+  border: 1px solid transparent;
+}

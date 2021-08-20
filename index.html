@@ -1,12 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- ------------------------ BOOTSTRAP STYLESHEET ------------------------- -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+
+    <!-- -------------------------- CUSTOM STYLESHEET -------------------------- -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>ASSIGNMENT-5 | MACBOOK PRO</title>
+  </head>
+  <body>
+    <!-- ---------------------------- MAIN CONTENT ----------------------------- -->
+    <main>
+      <section class="container p-5">
+        <div class="row">
+          <div
+            class="
+              col-sm-12 col-md-6
+              d-flex
+              justify-content-md-end
+              p-3
+              justify-content-center
+              align-items-start
+            "
+          >
+            <!-- ---------------------------- PRODUCT IMAGE ---------------------------- -->
+            <img class="d-block w-75" src="images/mac.png" alt="" />
+          </div>
+          <div class="col-sm-12 col-md-6 p-3">
+            <!-- ------------------------ iMAC TITLE & DETAILS ------------------------- -->
+            <div class="product-details mb-5">
+              <h2 class="mb-3">
+                Customize your Blue 24-inch iMac with Apple M1 chip.
+              </h2>
+              <p class="text-dark">
+                Apple M1 chip with 8-core CPU with 4 performance cores and 4
+                efficiency cores, 7-core GPU, and 16-core Neural Engine.8GB
+                unified memory.256GB SSD storage.Two Thunderbolt / USB 4
+                ports.Magic Mouse.Magic Keyboard.
+              </p>
+            </div>
+
+            <!-- ------------------------------- MEMORY -------------------------------- -->
+            <div class="memory my-4">
+              <h5>Memory</h5>
+              <button class="btn btn-transparent btn-hover mb-2 mb-md-0 me-2">
+                8GB unifined Memory
+              </button>
+              <button class="btn btn-transparent btn-hover">
+                16GB unifined Memory
+              </button>
+            </div>
+
+            <!-- ------------------------------- STORAGE ------------------------------- -->
+            <div class="storage my-4">
+              <h5>Storage</h5>
+              <button class="btn btn-transparent btn-hover mb-2 mb-md-0 me-2">
+                256GB SSD storage
+              </button>
+              <button class="btn btn-transparent btn-hover mb-2 mb-md-0 me-2">
+                512GB SSD storage
+              </button>
+              <button class="btn btn-transparent btn-hover mb-2 mb-md-0">
+                1TB SSD storage
+              </button>
+            </div>
+
+            <!-- ------------------------------ DELIVERY ------------------------------- -->
+            <div class="memory my-4">
+              <h5>Choose your delivery option</h5>
+              <button class="btn btn-transparent btn-hover mb-2">
+                Friday,August 25 FREE Prime Delivery
+              </button>
+              <button class="btn btn-transparent btn-hover">
+                Friday,August 21 Delivery Charge $20
+              </button>
+            </div>
+
+            <!-- ------------------------------ PRICING ------------------------------- -->
+            <div class="pricing my-5">
+              <ul class="pricing-list m-0 p-0">
+                <li class="list-item d-flex justify-content-between">
+                  <h6>Best Price</h6>
+                  <h6>$<span id="">1299</span></h6>
+                </li>
+                <li class="list-item d-flex justify-content-between">
+                  <h6>Extra Memory Cost</h6>
+                  <h6>$<span id="">0</span></h6>
+                </li>
+                <li class="list-item d-flex justify-content-between">
+                  <h6>Extra Storage Cost</h6>
+                  <h6>$<span id="">0</span></h6>
+                </li>
+                <li class="list-item d-flex justify-content-between big-border">
+                  <h6>Delivery Charge</h6>
+                  <h6>$<span id="">1299</span></h6>
+                </li>
+                <li class="list-item d-flex justify-content-between">
+                  <h6>Total Price</h6>
+                  <h6>$<span id="">1299</span></h6>
+                </li>
+              </ul>
+            </div>
+
+            <!-- ----------------------------- PROMO CODE ------------------------------ -->
+            <div class="promo-code">
+              <h4 class="mb-3">Add Promo code</h4>
+              <div class="input-group mb-3 w-100">
+                <input
+                  type="text"
+                  class="form-control promo-input"
+                  placeholder="promo code"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                />
+                <button
+                  class="btn bg-danger text-white"
+                  type="button"
+                  id="button-addon2"
+                >
+                  Apply
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <h2 class="text-center">Total $<span>1299</span></h2>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
