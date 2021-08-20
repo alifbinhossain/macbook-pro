@@ -2,12 +2,14 @@
 body {
   background-image: linear-gradient(to left bottom, #b3e0e3, #d79ce0);
   color: darkslategrey;
+  font-weight: 400;
 }
 .big-border {
+  border: none;
   border-bottom: 2px solid darkslategrey !important;
 }
 .btn {
-  color: #000;
+  color: darkslategray;
   border: 1px solid darkslategray;
 }
 .btn-hover:hover {
@@ -15,7 +17,9 @@ body {
   color: #fff;
   border: 1px solid transparent;
 }
-
+hr {
+  opacity: 0.75;
+}
 /* --------------------------------- PRICING -------------------------------- */
 .pricing h6 {
   font-size: 1.2rem;
@@ -29,4 +33,9 @@ body {
 .list-item:not(:last-child) {
   margin-bottom: 5px;
   border-bottom: 1px solid lightslategray;
+}
+
+/* ------------------------------- PROMO CODE ------------------------------- */
+.promo-code button {
+  background-color: darkslategray;
 }

@@ -43,7 +43,7 @@
               <h2 class="mb-3">
                 Customize your Blue 24-inch iMac with Apple M1 chip.
               </h2>
-              <p class="text-dark">
+              <p>
                 Apple M1 chip with 8-core CPU with 4 performance cores and 4
                 efficiency cores, 7-core GPU, and 16-core Neural Engine.8GB
                 unified memory.256GB SSD storage.Two Thunderbolt / USB 4
@@ -54,10 +54,13 @@
             <!-- ------------------------------- MEMORY -------------------------------- -->
             <div class="memory my-4">
               <h5>Memory</h5>
-              <button class="btn btn-transparent btn-hover mb-2 mb-md-0 me-2">
+              <button
+                id="btn-8gb"
+                class="btn btn-transparent btn-hover mb-2 mb-md-0 me-2"
+              >
                 8GB unifined Memory
               </button>
-              <button class="btn btn-transparent btn-hover">
+              <button id="btn-16gb" class="btn btn-transparent btn-hover">
                 16GB unifined Memory
               </button>
             </div>
@@ -65,13 +68,22 @@
             <!-- ------------------------------- STORAGE ------------------------------- -->
             <div class="storage my-4">
               <h5>Storage</h5>
-              <button class="btn btn-transparent btn-hover mb-2 mb-md-0 me-2">
+              <button
+                id="btn-256gb"
+                class="btn btn-transparent btn-hover mb-2 mb-md-0 me-2"
+              >
                 256GB SSD storage
               </button>
-              <button class="btn btn-transparent btn-hover mb-2 mb-md-0 me-2">
+              <button
+                id="btn-512gb"
+                class="btn btn-transparent btn-hover mb-2 mb-md-0 me-2"
+              >
                 512GB SSD storage
               </button>
-              <button class="btn btn-transparent btn-hover mb-2 mb-md-0">
+              <button
+                id="btn-1tb"
+                class="btn btn-transparent btn-hover mb-2 mb-md-0"
+              >
                 1TB SSD storage
               </button>
             </div>
@@ -79,10 +91,16 @@
             <!-- ------------------------------ DELIVERY ------------------------------- -->
             <div class="memory my-4">
               <h5>Choose your delivery option</h5>
-              <button class="btn btn-transparent btn-hover mb-2">
+              <button
+                id="btn-free-delivery"
+                class="btn btn-transparent btn-hover mb-2 mb-xxl-0"
+              >
                 Friday,August 25 FREE Prime Delivery
               </button>
-              <button class="btn btn-transparent btn-hover">
+              <button
+                id="btn-fast-delivery"
+                class="btn btn-transparent btn-hover"
+              >
                 Friday,August 21 Delivery Charge $20
               </button>
             </div>
@@ -92,23 +110,23 @@
               <ul class="pricing-list m-0 p-0">
                 <li class="list-item d-flex justify-content-between">
                   <h6>Best Price</h6>
-                  <h6>$<span id="">1299</span></h6>
+                  <h6>$<span id="best-price">1299</span></h6>
                 </li>
                 <li class="list-item d-flex justify-content-between">
                   <h6>Extra Memory Cost</h6>
-                  <h6>$<span id="">0</span></h6>
+                  <h6>$<span id="memory-cost">0</span></h6>
                 </li>
                 <li class="list-item d-flex justify-content-between">
                   <h6>Extra Storage Cost</h6>
-                  <h6>$<span id="">0</span></h6>
+                  <h6>$<span id="storage-cost">0</span></h6>
                 </li>
                 <li class="list-item d-flex justify-content-between big-border">
                   <h6>Delivery Charge</h6>
-                  <h6>$<span id="">1299</span></h6>
+                  <h6>$<span id="delivery-charge">0</span></h6>
                 </li>
                 <li class="list-item d-flex justify-content-between">
                   <h6>Total Price</h6>
-                  <h6>$<span id="">1299</span></h6>
+                  <h6>$<span id="total-price">1299</span></h6>
                 </li>
               </ul>
             </div>
@@ -118,6 +136,7 @@
               <h4 class="mb-3">Add Promo code</h4>
               <div class="input-group mb-3 w-100">
                 <input
+                  id="promo-code"
                   type="text"
                   class="form-control promo-input"
                   placeholder="promo code"
@@ -125,7 +144,8 @@
                   aria-describedby="button-addon2"
                 />
                 <button
-                  class="btn bg-danger text-white"
+                  id="btn-apply"
+                  class="btn text-white"
                   type="button"
                   id="button-addon2"
                 >
@@ -134,12 +154,17 @@
               </div>
             </div>
           </div>
-          <hr class="mb-4" />
+          <hr class="mb-4 big-border" />
 
           <!-- -------------------------- TOTAL PRICE TITLE -------------------------- -->
-          <h2 class="text-center">Total $<span>1299</span></h2>
+          <h2 class="text-center">
+            Total $<span id="total-price-title">1299</span>
+          </h2>
         </div>
       </section>
     </main>
+
+    <!-- --------------------------- ADD EXTERNAL JS --------------------------- -->
+    <script src="js/script.js"></script>
   </body>
 </html>
