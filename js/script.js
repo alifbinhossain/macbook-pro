@@ -16,7 +16,7 @@ let deliveryChargeElem = document.getElementById("delivery-charge");
 let totalPriceElem = document.getElementById("total-price");
 let totalPriceTitleElem = document.getElementById("total-price-title");
 
-/* ------------------ COMMON FUNCTIONS TO ADD MULTIPLE BUTTONS ----------------- */
+/* ------------------ COMMON FUNCTIONS TO USE ON MULTIPLE BUTTONS ----------------- */
 /////////////////GET TOTAL AMOUNT
 function total() {
   let totalPrice =

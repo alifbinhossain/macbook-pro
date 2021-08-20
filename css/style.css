@@ -20,6 +20,24 @@ body {
 hr {
   opacity: 0.75;
 }
+
+/* ----------------------------- PRODUCTS IMAGE ----------------------------- */
+.product-images {
+  position: relative;
+}
+.sale-logo {
+  position: absolute;
+  left: 70px;
+  top: -30px;
+}
+
+@media (max-width: 668px) {
+  .sale-logo {
+    left: -10px;
+    top: -20px;
+  }
+}
+
 /* --------------------------------- PRICING -------------------------------- */
 .pricing h6 {
   font-size: 1.2rem;
