@@ -67,7 +67,7 @@ btnFastDelivery.addEventListener("click", function () {
 btnApply.addEventListener("click", function () {
   let promoCodeField = document.getElementById("promo-code");
 
-  //check condition: if the user inserted right prome code or not
+  //check condition: if the user provided right promo code or not
   if (promoCodeField.value == "stevekaku") {
     let totalPrice = parseFloat(totalPriceElem.innerText);
     let discountedPrice = totalPrice - totalPrice * 0.2;
