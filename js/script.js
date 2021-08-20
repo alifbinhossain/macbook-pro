@@ -36,12 +36,15 @@ function updatePrice(priceEleID, price) {
 }
 
 /* ------------------------- ALL BUTTONS FUNCTIONALLITY ------------------------- */
+/////////////////MEMORY BUTTONS
 btn8Gb.addEventListener("click", function () {
   updatePrice("memory-cost", 0);
 });
 btn16Gb.addEventListener("click", function () {
   updatePrice("memory-cost", 180);
 });
+
+/////////////////STORAGE BUTTONS
 btn256Gb.addEventListener("click", function () {
   updatePrice("storage-cost", 0);
 });
@@ -51,12 +54,16 @@ btn512Gb.addEventListener("click", function () {
 btn1TB.addEventListener("click", function () {
   updatePrice("storage-cost", 180);
 });
+
+/////////////////DELIVERY BUTTONS
 btnFreeDelivery.addEventListener("click", function () {
   updatePrice("delivery-charge", 0);
 });
 btnFastDelivery.addEventListener("click", function () {
   updatePrice("delivery-charge", 20);
 });
+
+/////////////////APPLY BUTTON
 btnApply.addEventListener("click", function () {
   let promoCodeField = document.getElementById("promo-code");
 
