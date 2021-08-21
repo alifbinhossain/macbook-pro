@@ -17,7 +17,7 @@ function total() {
 
   return totalPrice;
 }
-//////////////UPDATE FIELD & TOTAL PRICE
+//////////////UPDATE INDIVIDUAL FIELD & TOTAL PRICE
 function updatePrice(priceEleID, price) {
   let productElem = document.getElementById(priceEleID);
   productElem.innerText = price;
@@ -25,7 +25,7 @@ function updatePrice(priceEleID, price) {
   totalPriceTitleElem.innerText = total();
 }
 
-//////////////FUNCTION FOR APPLY BUTTON
+//////////////FUNCTION FOR APPLY BUTTON TO GET DISCOUNT
 function btnApply() {
   let promoCodeField = document.getElementById("promo-code");
 
