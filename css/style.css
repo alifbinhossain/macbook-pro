@@ -59,6 +59,6 @@ hr {
 }
 
 /* --------------------------------- FOOTER --------------------------------- */
-footer p {
-  letter-spacing: 1px;
+footer small {
+  letter-spacing: 0.6px;
 }
