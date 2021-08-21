@@ -61,12 +61,15 @@
             <div class="memory my-4">
               <h5>Memory</h5>
               <button
-                id="btn-8gb"
+                onclick="updatePrice('memory-cost', 0)"
                 class="btn btn-transparent btn-hover mb-2 mb-md-0 me-2"
               >
                 8GB unifined Memory
               </button>
-              <button id="btn-16gb" class="btn btn-transparent btn-hover">
+              <button
+                onclick="updatePrice('memory-cost', 180)"
+                class="btn btn-transparent btn-hover"
+              >
                 16GB unifined Memory
               </button>
             </div>
@@ -75,19 +78,19 @@
             <div class="storage my-4">
               <h5>Storage</h5>
               <button
-                id="btn-256gb"
+                onclick="updatePrice('storage-cost', 0)"
                 class="btn btn-transparent btn-hover mb-2 mb-md-0 me-2"
               >
                 256GB SSD storage
               </button>
               <button
-                id="btn-512gb"
+                onclick="updatePrice('storage-cost', 100)"
                 class="btn btn-transparent btn-hover mb-2 mb-md-0 me-2"
               >
                 512GB SSD storage
               </button>
               <button
-                id="btn-1tb"
+                onclick="updatePrice('storage-cost', 180)"
                 class="btn btn-transparent btn-hover mb-2 mb-md-0"
               >
                 1TB SSD storage
@@ -98,13 +101,13 @@
             <div class="memory my-4">
               <h5>Choose your delivery option</h5>
               <button
-                id="btn-free-delivery"
+                onclick="updatePrice('delivery-charge', 0);"
                 class="btn btn-transparent btn-hover mb-2 mb-xxl-0"
               >
                 Friday,August 25 FREE Prime Delivery
               </button>
               <button
-                id="btn-fast-delivery"
+                onclick="updatePrice('delivery-charge', 20);"
                 class="btn btn-transparent btn-hover"
               >
                 Friday,August 21 Delivery Charge $20
@@ -150,7 +153,7 @@
                   aria-describedby="button-addon2"
                 />
                 <button
-                  id="btn-apply"
+                  onclick="btnApply()"
                   class="btn text-white"
                   type="button"
                   id="button-addon2"

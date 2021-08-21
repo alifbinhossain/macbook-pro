@@ -1,13 +1,3 @@
-/* ------------------------------- ALL BUTTONS ------------------------------ */
-let btn8Gb = document.getElementById("btn-8gb");
-let btn16Gb = document.getElementById("btn-16gb");
-let btn256Gb = document.getElementById("btn-256gb");
-let btn512Gb = document.getElementById("btn-512gb");
-let btn1TB = document.getElementById("btn-1tb");
-let btnFreeDelivery = document.getElementById("btn-free-delivery");
-let btnFastDelivery = document.getElementById("btn-fast-delivery");
-let btnApply = document.getElementById("btn-apply");
-
 /* ---------------------------- ALL PRICE ELEMENT --------------------------- */
 let bestPriceElem = document.getElementById("best-price");
 let memoryCostElem = document.getElementById("memory-cost");
@@ -35,36 +25,8 @@ function updatePrice(priceEleID, price) {
   totalPriceTitleElem.innerText = total();
 }
 
-/* ------------------------- ALL BUTTONS FUNCTIONALLITY ------------------------- */
-/////////////////MEMORY BUTTONS
-btn8Gb.addEventListener("click", function () {
-  updatePrice("memory-cost", 0);
-});
-btn16Gb.addEventListener("click", function () {
-  updatePrice("memory-cost", 180);
-});
-
-/////////////////STORAGE BUTTONS
-btn256Gb.addEventListener("click", function () {
-  updatePrice("storage-cost", 0);
-});
-btn512Gb.addEventListener("click", function () {
-  updatePrice("storage-cost", 100);
-});
-btn1TB.addEventListener("click", function () {
-  updatePrice("storage-cost", 180);
-});
-
-/////////////////DELIVERY BUTTONS
-btnFreeDelivery.addEventListener("click", function () {
-  updatePrice("delivery-charge", 0);
-});
-btnFastDelivery.addEventListener("click", function () {
-  updatePrice("delivery-charge", 20);
-});
-
-/////////////////APPLY BUTTON
-btnApply.addEventListener("click", function () {
+//////////////FUNCTION FOR APPLY BUTTON
+function btnApply() {
   let promoCodeField = document.getElementById("promo-code");
 
   //check condition: if the user provided right promo code or not
@@ -78,4 +40,4 @@ btnApply.addEventListener("click", function () {
 
   //clear field
   promoCodeField.value = "";
-});
+}
