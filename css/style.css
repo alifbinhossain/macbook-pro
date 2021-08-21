@@ -57,3 +57,8 @@ hr {
 .promo-code button {
   background-color: darkslategray;
 }
+
+/* --------------------------------- FOOTER --------------------------------- */
+footer p {
+  letter-spacing: 1px;
+}
